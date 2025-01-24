@@ -1,0 +1,12 @@
+{
+  "name": "@devzeng/memory_cache",
+  "version": "0.1.0",
+  "description": "LRU Memory Cache for HarmonyOS",
+  "keywords": ["lru", "cache", "memory"],
+  "main": "Index.ets",
+  "author": "zengjing <hhtczengjing@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/hhtczengjing/ohos_memory_cache.git",
+  "homepage": "https://github.com/hhtczengjing/ohos_memory_cache",
+  "dependencies": {}
+}
