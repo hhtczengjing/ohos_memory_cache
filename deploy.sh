@@ -35,4 +35,4 @@ hvigorw --mode module \
 
 har_path="$PROJECT_PATH/memory_cache/build/default/outputs/default/memory_cache.har"
 
-#ohpm publish $har_path
+ohpm publish $har_path
