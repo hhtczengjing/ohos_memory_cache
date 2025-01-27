@@ -30,5 +30,11 @@ cache.has('key1');
 cache.remove('key1');
 
 // 清空缓存
-cache.clean(); 
+cache.clean();
+
+// all keys
+cache.keys();
+
+// all values
+cache.values(); 
 ```

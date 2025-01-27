@@ -1,6 +1,6 @@
 {
   "name": "@devzeng/memory_cache",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "LRU Memory Cache for HarmonyOS",
   "keywords": ["lru", "cache", "memory"],
   "main": "Index.ets",
