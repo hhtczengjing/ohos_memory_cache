@@ -93,6 +93,32 @@ struct Index {
       .justifyContent(FlexAlign.SpaceBetween)
       .alignItems(VerticalAlign.Top)
 
+      Row() {
+        Button('All Keys')
+          .btnStyle()
+          .onClick(() => {
+            const keys = this.cache.keys();
+            for (let index = 0; index < keys.length; index++) {
+              const key = keys[index];
+              this.logs.push(`key ${key}`);
+            }
+          })
+
+        Button('All Values')
+          .btnStyle()
+          .onClick(() => {
+            const values = this.cache.values();
+            for (let index = 0; index < values.length; index++) {
+              const value = values[index];
+              this.logs.push(`value ${value}`);
+            }
+          })
+      }
+      .padding({ left: 16, right: 16 })
+      .width('100%')
+      .justifyContent(FlexAlign.SpaceBetween)
+      .alignItems(VerticalAlign.Top)
+
       if (this.logs && this.logs.length > 0) {
         Column() {
           Text('Output Logs: ')

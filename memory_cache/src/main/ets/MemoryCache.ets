@@ -1,3 +1,4 @@
+import { CacheItem } from "./CacheItem";
 import { Configuration } from "./Configuration";
 import { MemoryLruCache } from "./MemoryLruCache";
 
@@ -97,6 +98,25 @@ export class MemoryCache<T> {
    */
   clear(): void {
     this.getCache().removeAll();
+  }
+
+  /**
+   * Obtains a list of all values
+   *
+   * @returns all values
+   */
+  values(): T[] {
+    const results = this.getCache().values() as CacheItem<T>[]
+    return results.map((item) => item.item);
+  }
+
+  /**
+   * Obtains a list of all keys
+   *
+   * @returns all keys
+   */
+  keys(): string[] {
+    return this.getCache().keys();
   }
 
   private getCache(): MemoryLruCache<string, T> {

@@ -59,6 +59,14 @@ export class MemoryLruCache<K, V> {
     return remove;
   }
 
+  values(): CacheItem<V>[] {
+    return this.lruCache.values();
+  }
+
+  keys(): K[] {
+    return this.lruCache.keys();
+  }
+
   removeAll(): void {
     this.lruCache.clear();
     this.totalCost = 0;
